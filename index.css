@@ -224,4 +224,69 @@ body {
   opacity: 1 !important;
   pointer-events: auto !important;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    position: static;
+  }
+  .headere {
+    position: static !important;
+    width: 100% !important;
+    height: 100vh;
+    background-color: #14181B;
+    display: block !important;
+  }
+  .headere .container {
+    border-radius: 20px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .headere .container * {
+    color: white;
+  }
+  .headere .container .game {
+    background-color: transparent;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .headere .container .game .cells {
+    background-color: transparent !important;
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .headere .container .game .cells h1 {
+    font-size: 100px;
+    display: none;
+    color: white;
+  }
+  .headere .container button {
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=index.css.map */
